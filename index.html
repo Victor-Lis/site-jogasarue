@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGASARUÊ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            padding: 2em;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 10px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 0.5em 1em;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #b18862;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="IMG/LOGO_JOGASARUÊ_redondo.png" alt="logo jogasarue" width="10%">
+        <h1>Fazer é divertido!</h1>
+    </header>
+    <div class="container">
+        <p>Aqui, acreditamos que a diversão começa antes mesmo da primeira jogada. Todos os jogos estão prontos para você baixar, imprimir e montar. Tudo isso gratuítamente!<br>Cada dobra, cada recorte e cada peça criada pelas suas mãos tornam a experiência mais especial.<br> É o prazer de montar e a alegria de jogar reunidos em um só lugar.<br>Prepare a tesoura, junte a galera e descubra como é gratificante trazer um jogo à vida.</p>
+        <button onclick="irParaGaleria()">Galeria de Jogos</button><br><br>
+        <button onclick="irParaMaterial()">Materiais recomendados</button><br><br>
+        <button onclick="irParaContato()">Contato</button>
+    </div>
+    
+    <script>
+        function irParaGaleria() {
+            window.location.href = 'galeria.html';
+        }
+
+        function irParaContato() {
+            window.location.href = 'contato.html';
+        }
+
+        function irParaMaterial() {
+            window.location.href = 'material.html';
+        }
+    </script>
+</body>
+</html>
