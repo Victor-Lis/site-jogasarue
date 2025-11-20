@@ -1,91 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria de Jogos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-        .container {
-            padding: 2em;
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        .galeria {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .foto {
-            flex: 1 1 calc(25% - 10px); /* Ajuste para 8 fotos */
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-        .foto img {
-            width: 100%;
-            height: auto;
-        }
-        .descricao {
-            padding: 0.5em;
-            background-color: #fff;
-        }
-        .voltar {
-            display: block;
-            margin: 20px auto;
-            padding: 0.5em 1em;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            text-align: center;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .voltar:hover {
-            background-color: #b18862;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria de Jogos</title>
+  <link rel="stylesheet" href="css/galeria.css" />
 </head>
 <body>
-    <header>
-        <h1>Galeria de Jogos</h1>
-    </header>
-    <div class="container">
-        <div class="galeria">
-           
-            <div class="foto">
-                <img src="IMG/POKÉMON LITTLE MASTERS.jpg" alt="Foto 5">
-                <div class="descricao">Pokémon Little Masters</div>
-            </div>
-            <div class="foto">
-                <img src="IMG/S ufo.com_PORT.jpg" alt="Foto 6">
-                <div class="descricao">S ufo.co</div>
-            </div>
-            <div class="foto">
-                <img src="IMG/Stardew_Valley_PnP_PORT.jpg" alt="Foto 7">
-                <div class="descricao">Stardew Valley PnP</div>
-            </div>
-            
-        </div>
-        <button class="voltar" onclick="voltarPagina()">Voltar</button>
+  <header>
+    <h1>Galeria de Jogos</h1>
+  </header>
+
+  <div class="container">
+    <div class="galeria">
+      <div class="foto">
+        <img src="IMG/POKÉMON LITTLE MASTERS.jpg" alt="Pokémon Little Masters" />
+        <div class="descricao">Pokémon Little Masters</div>
+      </div>
+      <div class="foto">
+        <img src="IMG/S ufo.com_PORT.jpg" alt="S ufo.co" />
+        <div class="descricao">S ufo.co</div>
+      </div>
+      <div class="foto">
+        <img src="IMG/Stardew_Valley_PnP_PORT.jpg" alt="Stardew Valley PnP" />
+        <div class="descricao">Stardew Valley PnP</div>
+      </div>
     </div>
 
-    <script>
-        function voltarPagina() {
-            window.history.back();
-        }
-    </script>
+    <button class="voltar" onclick="voltarPagina()">Voltar</button>
+  </div>
+
+  <script src="js/galeria.js"></script>
 </body>
 </html>

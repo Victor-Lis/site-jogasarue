@@ -1,92 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-        .container {
-            padding: 2em;
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            border-radius: 10px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        input, textarea {
-            margin-bottom: 1em;
-            padding: 0.5em;
-            font-size: 1em;
-            border: 1px solid #ccc;
-        }
-        button {
-            background-color: #333;
-            color: #fff;
-            border: none;
-            padding: 0.5em; /* Tamanho original mantido para altura */
-            width: 15%; /* Largura reduzida em 50% */
-            cursor: pointer;
-            align-self: center; /* Centraliza o botão no formulário */
-        }
-        button:hover {
-            background-color: #b18862;
-        }
-        .voltar {
-            display: block;
-            margin: 20px auto;
-            padding: 0.5em 1em;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            text-align: center;
-            cursor: pointer;
-        }
-        .voltar:hover {
-            background-color: #b18862;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato</title>
+  <link rel="stylesheet" href="css/contato-email.css" />
 </head>
 <body>
-    <header>
-        <h1>Contato</h1>
-    </header>
-    <div class="container">
-        <form action="mailto:jogasarue@gmail.com" method="post" enctype="text/plain">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+  <header>
+    <h1>Contato</h1>
+  </header>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+  <div class="container">
+    <form action="mailto:jogasarue@gmail.com" method="post" enctype="text/plain">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
 
-            <button type="submit">Enviar</button>
-        </form>
-        <button class="voltar" onclick="voltarPagina()">Voltar</button>
-    </div>
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
 
-    <script>
-        function voltarPagina() {
-            window.history.back();
-        }
-    </script>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <button class="voltar" onclick="voltarPagina()">Voltar</button>
+  </div>
+
+  <script src="js/contato-email.js"></script>
 </body>
 </html>
