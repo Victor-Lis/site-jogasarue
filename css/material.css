@@ -19,6 +19,7 @@ header {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  overflow-x: auto;
 }
 
 .galeria {
@@ -56,4 +57,45 @@ header {
 
 .voltar:hover {
   background-color: #b18862;
+}
+
+/* Responsividade para material.html */
+.container img.responsive-map {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 1.5em;
+    margin: 1em;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.25rem;
+    padding: 0.5em 0;
+  }
+
+  .galeria .foto {
+    flex: 1 1 calc(50% - 10px);
+  }
+
+  .voltar {
+    width: 90%;
+    padding: 0.75em 1em;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .galeria .foto {
+    flex: 1 1 100%;
+  }
 }
